@@ -14,7 +14,7 @@ public class WishListSteps {
     HomePage homePage = new HomePage();
 
     @When("user click on add to wishlist on the third item")
-    public void clickOnWishListButton() {
+    public void clickOnWishListButton() throws InterruptedException {
         homePage.getWishlistButtons().get(2).click();
     }
 
@@ -33,7 +33,6 @@ public class WishListSteps {
 
         soft.assertAll();
     }
-
 
 
     @And("click on wishList tab")
